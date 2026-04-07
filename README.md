@@ -28,7 +28,7 @@ A 2D action-adventure dungeon crawler built in Unity. Explore dark dungeons, fig
 
 ### Playable Build
 
-1. Download the build from [link to build].
+1. Download the build from the unity editor.
 2. Extract the zip file.
 3. Run `CurseOfBloodmore.exe`.
 
@@ -88,14 +88,10 @@ Assets/
 
 ## Known Issues
 
-[Put here if we find any.]
+Issue with useability of dialog buttons on some machines.
 
 ## Credits
 
 - **Team Members:** Tanner Bell | Shelby Maurice | Girolamo Figliomeni
 - **Course:** COMP-4432
 - **Engine:** Unity 6
-
-## Assets
-
-[Get assets from Tanner and Shelby.]
