@@ -65,25 +65,25 @@ A 2D action-adventure dungeon crawler built in Unity. Explore dark dungeons, fig
 
 ```
 Assets/
-  Scenes/         - All game scenes
+  Scenes/                - All game scenes
   Scripts/
-    Player/        - Player movement and combat
-    Enemy/         - Enemy AI and behavior
-    Entity/        - Shared entity logic
-    Data/          - Item and quest data
-    Inventory/     - Inventory system
-    InventorySystem/ - Item management
-    ItemSystem/    - Item definitions
-    Skill System/  - Player skills
-    StateMachine/  - State machine logic
-    InteractiveObjects/ - Chests, doors, etc.
-    Interface/     - UI interfaces
-    UI/            - UI scripts
-    Parallax/      - Background scrolling
-  Prefab/          - Reusable prefabs
-  Materials/       - Materials and shaders
-  Graphics/        - Sprites and animations
-  Sounds/          - Audio files
+    Player/              - Player movement and combat
+    Enemy/               - Enemy AI and behavior
+    Entity/              - Shared entity logic
+    Data/                - Item and quest data
+    Inventory/           - Inventory system
+    InventorySystem/     - Item management
+    ItemSystem/          - Item definitions
+    Skill System/        - Player skills
+    StateMachine/        - State machine logic
+    InteractiveObjects/  - Chests, doors, etc.
+    Interface/           - UI interfaces
+    UI/                  - UI scripts
+    Parallax/            - Background scrolling
+  Prefab/                - Reusable prefabs
+  Materials/             - Materials and shaders
+  Graphics/              - Sprites and animations
+  Sounds/                - Audio files
 ```
 
 ## Known Issues
