@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b021617ba520544a677ffdc1b8b4c0, type: 3}
+  m_Name: QuestSO
+  m_EditorClassIdentifier: 
+  questName: Undead walk again
+  questDescription: The undead are walking among us, help the blacksmith clear the
+    path to the graveyard, defeat the undead and find the keys to go to the next
+    area
+  questLevel: 0
+  objectives:
+  - description: Find the Keys
+    target: {fileID: 11400000, guid: 0bcd1252d62819641a9934084bb32c76, type: 2}
+    requiredAmount: 5
+  rewards: []
