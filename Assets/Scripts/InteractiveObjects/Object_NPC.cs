@@ -27,20 +27,12 @@ public class Object_NPC : MonoBehaviour
     [SerializeField] private QuestSO npcQuest;
     [SerializeField] private QuestManager questManager;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip playerNearSound;
-    [SerializeField] private AudioClip interactSound;
-    [SerializeField] private AudioClip advanceDialogueSound;
-
     protected virtual void Awake()
     {
         ui = FindFirstObjectByType<UI>();
         startPosition = interactToolTip.transform.position;
         interactToolTip.SetActive(false);
 
-        if (audioSource == null)
-            audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -54,12 +46,10 @@ public class Object_NPC : MonoBehaviour
         {
             if (DialogueManager.instance.isDialogueActive)
             {
-                PlaySound(advanceDialogueSound);
                 DialogueManager.instance.AdvanceDialogue();
             }
             else
             {
-                PlaySound(interactSound);
                 Interact();
             }
         }
@@ -81,8 +71,6 @@ public class Object_NPC : MonoBehaviour
         player = collision.transform;
         playerInRange = true;
         interactToolTip.SetActive(true);
-
-        PlaySound(playerNearSound);
 
         if (animator != null)
             animator.SetBool(paramName, true);
@@ -138,28 +126,5 @@ public class Object_NPC : MonoBehaviour
 
         // Quest not accepted yet
         DialogueManager.instance.StartDialogue(defaultDialogue);
-    }
-
-    private void PlaySound(AudioClip clip)
-    {
-        if (audioSource == null || clip == null) return;
-        audioSource.PlayOneShot(clip);
-    }
-
-    // Use this from Animation Events
-    public void PlayAnimationSound(AudioClip clip)
-    {
-        PlaySound(clip);
-    }
-
-    // Example named methods for animation events
-    public void PlayWaveSound()
-    {
-        PlaySound(interactSound);
-    }
-
-    public void PlayGreetingSound()
-    {
-        PlaySound(playerNearSound);
     }
 }

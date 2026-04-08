@@ -119,6 +119,8 @@ public class QuestLogUI : MonoBehaviour
 
     public void OnAcceptQuestClicked()
     {
+        Debug.Log("Accept button clicked");
+
         if (questSO == null || questSO == noAvailableQuestSO)
             return;
 
