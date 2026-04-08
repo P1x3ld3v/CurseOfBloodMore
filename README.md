@@ -13,10 +13,11 @@ A 2D action-adventure dungeon crawler built in Unity. Explore dark dungeons, fig
 | Dash             | Shift      |
 | Attack           | Left-Click |
 | Block            | Q          |
-| Ultimate Spell   | ?          |
+| Ultimate Spell   | R          |
 | Interact         | F          |
 | Toggle Inventory | X          |
 | Skill Tree       | L          |
+| Toggle Dialog    | C          |
 
 ### Gameplay
 
