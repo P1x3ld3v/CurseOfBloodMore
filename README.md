@@ -1,6 +1,6 @@
 # Curse of Bloodmore
 
-A 2D action-adventure dungeon crawler built in Unity. Explore dark dungeons, fight undead enemies, complete quests, and uncover the curse that plagues the land of Bloodmore.
+A 2D action-adventure dungeon crawler built in Unity. Explore dark dungeons, fight undead enemies, complete quests, and defeat the final boss to uncover the curse that plagues the land of Bloodmore.
 
 ## How to Play
 
