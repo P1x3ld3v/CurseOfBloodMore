@@ -89,7 +89,7 @@ Assets/
 
 ## Known Issues
 
-Issue with emeny not attacking player.
+- Issue with emeny not attacking player.
 
 ## Credits
 
