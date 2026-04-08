@@ -91,6 +91,7 @@ Assets/
 ## Known Issues
 
 - Issue with emeny not attacking player.
+- Issue with game save when moving from start to level 1.
 
 ## Credits
 
