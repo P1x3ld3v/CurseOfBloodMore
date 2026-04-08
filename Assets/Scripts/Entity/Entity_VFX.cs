@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -109,5 +110,10 @@ public class Entity_VFX : MonoBehaviour
 
         yield return new WaitForSeconds(onDamageVfxDuration);
         sr.material = originalMaterial;
+    }
+
+    internal void CreateOnHitVFX(Transform transform, bool isCrit, ElementType element)
+    {
+        throw new NotImplementedException();
     }
 }

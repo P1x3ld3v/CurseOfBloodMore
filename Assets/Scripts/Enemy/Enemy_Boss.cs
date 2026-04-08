@@ -2,6 +2,7 @@ using System.Xml;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Enemy_Boss : Enemy, ICounterable
 {
@@ -11,7 +12,12 @@ public class Enemy_Boss : Enemy, ICounterable
     public Enemy_BossAttackState bossAttackState { get; private set; }
     public Enemy_BossBattleState bossBattleState { get; private set; }
     public Enemy_BossTeleportState bossTeleportState { get; private set; }
-    public Enemy_BossSpellCastState bossSpellCastState { get;  private set; }
+    public Enemy_BossSpellCastState bossSpellCastState { get; private set; }
+
+    [Header("Win Screen")]
+    [SerializeField] private string winSceneName = "WinScene";
+    [SerializeField] private float winDelay = 2f;
+    private bool hasTriggeredWin = false;
 
     [Header("Boss Details")]
     public float maxBattleIdleTime = 5;
@@ -22,6 +28,8 @@ public class Enemy_Boss : Enemy, ICounterable
     [SerializeField] private float spellCastRate = 1.2f;
     [SerializeField] private float spellCastStateCooldown = 10;
     [SerializeField] private Vector2 playerOffsetPrediction;
+    [SerializeField] private DamageScaleData spellDamageScale;
+
     private float lastTimeCastedSpells = float.NegativeInfinity;
 
     public bool spellCastPreformed { get; private set; }
@@ -57,6 +65,20 @@ public class Enemy_Boss : Enemy, ICounterable
         defaultTeleportChance = chanceTeleport;
         stateMachine.Initialize(idleState);
     }
+    public override void EntityDeath()
+    {
+        base.EntityDeath();
+
+        if (hasTriggeredWin) return;
+        hasTriggeredWin = true;
+
+        Invoke(nameof(LoadWinScene), winDelay);
+    }
+
+    private void LoadWinScene()
+    {
+        SceneManager.LoadScene(winSceneName);
+    }
 
     public void HandleCounter()
     {
@@ -85,7 +107,7 @@ public class Enemy_Boss : Enemy, ICounterable
             Enemy_BossSpell spell
                 = Instantiate(spellCastPrefab, spellPosition, Quaternion.identity).GetComponent<Enemy_BossSpell>();
 
-            spell.SetupSpell(combat);
+            spell.SetupSpell(combat, spellDamageScale);
 
             yield return new WaitForSeconds(spellCastRate);
         }

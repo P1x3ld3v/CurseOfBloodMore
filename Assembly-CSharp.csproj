@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\Data\QustLog\ActorSO.cs" />
     <Compile Include="Assets\Scripts\SaveSystem\FileDataHandler.cs" />
     <Compile Include="Assets\Scripts\Entity\Entity_Health.cs" />
+    <Compile Include="Assets\Scripts\AreaNameUI.cs" />
     <Compile Include="Assets\Scripts\StatSystem\StatType.cs" />
     <Compile Include="Assets\Scripts\SaveSystem\SaveManager.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyStates\Boss\Enemy_BossBattleState.cs" />
@@ -109,12 +110,14 @@
     <Compile Include="Assets\Scripts\Enemy\Enemy_VFX.cs" />
     <Compile Include="Assets\Scripts\Data\QustLog\QuestLogSlot.cs" />
     <Compile Include="Assets\Scripts\UI\UI_ToolTip.cs" />
+    <Compile Include="Assets\Scripts\Entity\DamageScaleData.cs" />
     <Compile Include="Assets\Scripts\StatSystem\Stat_ResourceGroup.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy_BossAnimationTrigger.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStates\Player_MoveState.cs" />
     <Compile Include="Assets\Scripts\Player\Player_VFX.cs" />
     <Compile Include="Assets\Scripts\Data\DialogueNpcData.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyStates\Skelly\Enemy_IdleState.cs" />
+    <Compile Include="Assets\Scripts\AreaTrigger.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStates\Player_GroundedState.cs" />
     <Compile Include="Assets\Scripts\Data\QuestDataSO.cs" />
     <Compile Include="Assets\Scripts\SceneChanger.cs" />
@@ -141,11 +144,13 @@
     <Compile Include="Assets\Scripts\Player\PlayerStates\Player_JumpState.cs" />
     <Compile Include="Assets\Scripts\Interface\ISaveable.cs" />
     <Compile Include="Assets\Scripts\inventorysystem\Inventory\Loot.cs" />
+    <Compile Include="Assets\Scripts\Entity\IDamageable.cs" />
     <Compile Include="Assets\Scripts\Entity\Entity_Combat.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStates\Player_BasicAttackState.cs" />
     <Compile Include="Assets\Scripts\Entity\Entity_Stats.cs" />
     <Compile Include="Assets\Scripts\enum\ElementType.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Entity\AttackData.cs" />
     <Compile Include="Assets\Scripts\UI\UI_QuestPreviw.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyStates\Skelly\Enemy_GroundedState.cs" />
     <Compile Include="Assets\Scripts\Data\Dia\DialogueSO.cs" />
@@ -160,6 +165,7 @@
     <Compile Include="Assets\Scripts\inventorysystem\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Data\QustLog\QuestManager.cs" />
     <Compile Include="Assets\Scripts\ItemSystem\Inventory_Base.cs" />
+    <Compile Include="Assets\Scripts\BossMusicTrigger.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStates\Player_IdleState.cs" />
     <Compile Include="Assets\Scripts\MainMusicSound.cs" />
     <Compile Include="Assets\Scripts\InteractiveObjects\Object_ItemPickup.cs" />

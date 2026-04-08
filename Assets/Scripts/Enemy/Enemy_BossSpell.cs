@@ -3,13 +3,15 @@ using UnityEngine;
 public class Enemy_BossSpell : MonoBehaviour
 {
     private Entity_Combat combat;
+    private DamageScaleData damageScaleData;
 
     [SerializeField] private LayerMask whatIsTarget;
     [SerializeField] private Collider2D col;
 
 
-    public void SetupSpell(Entity_Combat combat)
+    public void SetupSpell(Entity_Combat combat, DamageScaleData damageScaleData)
     {
+        this.damageScaleData = damageScaleData;
         this.combat = combat;
         Destroy(gameObject, 2f);
     }
@@ -20,9 +22,10 @@ public class Enemy_BossSpell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Check if collided object is on a layer we want to damage
         if (((1 << collision.gameObject.layer) & whatIsTarget) != 0)
         {
-            combat.PerformAttack();
+            combat.PerformAttackOnTarget(collision.transform, damageScaleData);
             DisableCollider();
         }
     }

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e0cec87ade7f64983a225cac04f5a1, type: 3}
+  m_Name: Beginning
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 0}
+    text: Thanks for clearing a path for us...but... I need to tell you something
+      important.
+  - speaker: {fileID: 0}
+    text: "There\u2019s an old crypt beneath the graveyard.\nSealed years ago when
+      things\u2026 went bad."
+  - speaker: {fileID: 0}
+    text: "If those creatures are holding the keys,\nthen whatever\u2019s inside
+      that crypt is waking up."
+  - speaker: {fileID: 0}
+    text: "And it\u2019s not just skeletons anymore, is it?"
+  - speaker: {fileID: 0}
+    text: "I can feel it too.\nThe air\u2019s heavier. Like the town itself is holding
+      its breath."
+  - speaker: {fileID: 0}
+    text: Listen carefully.....
+  - speaker: {fileID: 0}
+    text: "You\u2019ll need five keys to open that crypt"
+  options: []
+  offerQuestOnEnd: {fileID: 11400000, guid: d5547dbac5c637e4eb436ed1d0f3dd2f, type: 2}

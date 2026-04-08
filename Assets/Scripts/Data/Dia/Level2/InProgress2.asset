@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e0cec87ade7f64983a225cac04f5a1, type: 3}
+  m_Name: InProgress2
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 0}
+    text: Back already?
+  - speaker: {fileID: 0}
+    text: "\u2026You don\u2019t have all five keys yet, do you?"
+  - speaker: {fileID: 0}
+    text: "You feel it, don\u2019t you?\nLike something\u2019s watching from beneath
+      the ground."
+  - speaker: {fileID: 0}
+    text: Stay sharp out there.
+  options: []
+  offerQuestOnEnd: {fileID: 0}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83e0cec87ade7f64983a225cac04f5a1, type: 3}
+  m_Name: Ancient
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 0}
+    text: "\u2026You have them."
+  - speaker: {fileID: 0}
+    text: "No\u2026 no, that\u2019s not right."
+  - speaker: {fileID: 0}
+    text: "The air changed.\n\nDidn\u2019t you feel it?"
+  - speaker: {fileID: 0}
+    text: "It\u2019s not just a curse anymore.\nYou didn\u2019t just find the keys\u2026\nYou
+      woke something up."
+  - speaker: {fileID: 0}
+    text: "Long before this town was built\u2026\nthere was something buried beneath
+      this land.\nNot dead. Not alive."
+  - speaker: {fileID: 0}
+    text: Waiting.
+  - speaker: {fileID: 0}
+    text: They called it.....The Reaper
+  - speaker: {fileID: 0}
+    text: "Those skeletons?\nThey weren\u2019t the curse. They were the warning.\nAnd
+      you\u2026\n\nYou just gathered the keys to his prison."
+  options: []
+  offerQuestOnEnd: {fileID: 11400000, guid: 085a659f8ff7a5643b756b6cac4d44b0, type: 2}
