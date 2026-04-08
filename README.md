@@ -89,7 +89,7 @@ Assets/
 
 ## Known Issues
 
-Issue with useability of dialog buttons on some machines.
+Issue with emeny not attacking player.
 
 ## Credits
 
