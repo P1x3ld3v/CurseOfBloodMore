@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\UI\UI_TreeConnection.cs" />
     <Compile Include="Assets\Scripts\Data\DialogueSpeakerSO.cs" />
     <Compile Include="Assets\Scripts\Interface\IDamgable.cs" />
+    <Compile Include="Assets\Scripts\NPCAnimationSound.cs" />
     <Compile Include="Assets\Scripts\Skill System\SkillObject_Shard.cs" />
     <Compile Include="Assets\Scripts\inventorysystem\Inventory\InventoryManager.cs" />
     <Compile Include="Assets\Scripts\Skill System\Skill_Shard.cs" />
@@ -90,7 +91,9 @@
     <Compile Include="Assets\Scripts\Entity\Entity_StatusHandler.cs" />
     <Compile Include="Assets\Scripts\Data\ItemData\ItemEffect_DataSO.cs" />
     <Compile Include="Assets\Scripts\Data\QustLog\QuestObjectiveSlot.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Skill System\Skill_objectDomain.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerCombatAudio.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy_Skeleton.cs" />
     <Compile Include="Assets\Scripts\Skill System\skill_base.cs" />
     <Compile Include="Assets\Scripts\Enemy\Enemy_AnimationTriggers.cs" />
@@ -158,6 +161,7 @@
     <Compile Include="Assets\Scripts\Data\QustLog\QuestManager.cs" />
     <Compile Include="Assets\Scripts\ItemSystem\Inventory_Base.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStates\Player_IdleState.cs" />
+    <Compile Include="Assets\Scripts\MainMusicSound.cs" />
     <Compile Include="Assets\Scripts\InteractiveObjects\Object_ItemPickup.cs" />
     <Compile Include="Assets\Scripts\ItemSystem\Inventory_Item.cs" />
     <Compile Include="Assets\Scripts\Interface\ICounterable.cs" />

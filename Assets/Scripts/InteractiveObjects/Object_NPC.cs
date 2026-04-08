@@ -6,6 +6,9 @@ public class Object_NPC : MonoBehaviour
     protected Transform player;
     protected UI ui;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip proximitySFX;
+
     [SerializeField] private Transform npc;
     [SerializeField] private GameObject interactToolTip;
     [SerializeField] private Animator animator;
@@ -74,6 +77,11 @@ public class Object_NPC : MonoBehaviour
 
         if (animator != null)
             animator.SetBool(paramName, true);
+
+        if (audioSource != null && proximitySFX != null)
+        {
+            audioSource.PlayOneShot(proximitySFX);
+        }
     }
 
     protected virtual void OnTriggerExit2D(Collider2D collision)

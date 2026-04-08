@@ -86,6 +86,8 @@ MonoBehaviour:
   itemSO: {fileID: 11400000, guid: 0bcd1252d62819641a9934084bb32c76, type: 2}
   sr: {fileID: 5783473871776607469}
   anim: {fileID: 4307341814005717236}
+  pickupSFX: {fileID: 8300000, guid: e4bb4261ae4a85a438af67685ee6939c, type: 3}
+  pickupVolume: 1
   canBePickedUp: 1
   quantity: 1
 --- !u!95 &4307341814005717236

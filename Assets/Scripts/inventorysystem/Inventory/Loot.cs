@@ -7,6 +7,10 @@ public class Loot : MonoBehaviour
     public SpriteRenderer sr;
     public Animator anim;
 
+    [Header("Audio")]
+    [SerializeField] private AudioClip pickupSFX;
+    [SerializeField] private float pickupVolume = 1f;
+
     public bool canBePickedUp = true;
     public int quantity;
     public static event Action<ItemSO, int> OnItemLooted;
@@ -23,7 +27,7 @@ public class Loot : MonoBehaviour
     {
         this.itemSO = itemSO;
         this.quantity = quantity;
-        canBePickedUp=false;
+        canBePickedUp = false;
 
         UpdateAppearance();
     }
@@ -36,8 +40,13 @@ public class Loot : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") && canBePickedUp ==true)
+        if (collision.CompareTag("Player") && canBePickedUp == true)
         {
+            if (pickupSFX != null)
+            {
+                AudioSource.PlayClipAtPoint(pickupSFX, transform.position, pickupVolume);
+            }
+
             anim.Play("LootPickup");
             OnItemLooted?.Invoke(itemSO, quantity);
             Destroy(gameObject, .5f);
@@ -47,7 +56,8 @@ public class Loot : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-        { canBePickedUp = true; }
+        {
+            canBePickedUp = true;
+        }
     }
 }
-    
